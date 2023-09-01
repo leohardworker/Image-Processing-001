@@ -1,0 +1,18 @@
+from PIL import Image
+
+# Görüntüyü yükle
+image = Image.open("sample_image.jpg")  # Görüntünün adını ve yolunu kendi dosyanıza göre değiştirin
+
+# Görüntüyü gri tonlamalıya dönüştür
+gray_image = image.convert("L")
+
+# Gri tonlamalı görüntüyü kaydet
+gray_image.save("gray_sample_image.jpg")  # Kaydedilen dosyanın adını ve yolunu isteğinize göre değiştirin
+
+# Görüntüyü ekranda göster
+image.show()
+gray_image.show()
+
+# Görüntüleri kapat
+image.close()
+gray_image.close()
