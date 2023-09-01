@@ -1,0 +1,18 @@
+from PIL import Image
+
+# Load the image
+image = Image.open("sample_image.jpg")  # Replace the image name and path with your own file
+
+# Convert the image to grayscale
+gray_image = image.convert("L")
+
+# Save the grayscale image
+gray_image.save("gray_sample_image.jpg")  # Replace the file name and path as desired
+
+# Display the images
+image.show()
+gray_image.show()
+
+# Close the images
+image.close()
+gray_image.close()
