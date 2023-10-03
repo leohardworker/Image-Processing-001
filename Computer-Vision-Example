@@ -1,0 +1,3 @@
+This code takes images from the camera with OpenCV, detects faces in each frame, and compares each detected face with the training data in the database. In this example, database queries and facial recognition algorithms are not completed. You will need to fill in these sections according to the database and facial recognition algorithm to be used.
+
+The phrase "database.db" in the code represents the name of the database file. Additionally, the file path containing the XML file ('haarcascade_frontalface_default.xml') of the Haar Cascade classifier used for face recognition must be correct. You can find this XML file in OpenCV's official GitHub repository.
